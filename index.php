@@ -78,7 +78,7 @@ function blurPass(i){
             $query = "SELECT *
                       FROM users
                       WHERE userID = '" . $_POST["username"] . "'
-                      AND password = AES_ENCRYPT('" . $_POST["pwd"] . "','crz0ew98ps8aes21')";
+                      AND password = AES_ENCRYPT('" . $_POST["pwd"] . "','EncryptionKeyGoesHere')";
             $result = mysql_query($query);
 
             if(mysql_num_rows($result) == 1){
