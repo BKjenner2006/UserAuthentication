@@ -51,7 +51,7 @@ function blurPass(i){
     $validUser = FALSE;    
     if (isset($_POST["username"])){//Only run if form was submitted
         //Connect to mySQL server
-        $conn = mysql_connect("localhost","root","D3@th@ng3l21");
+        $conn = mysql_connect("localhost","root","PasswordGoesHere");
         if(!$conn){//check if connection was successful
             die("Could not connect:" . mysql_error());
         }
